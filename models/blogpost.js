@@ -6,7 +6,8 @@ var blogpostSchema = new mongoose.Schema({
    date: Date,
    datestring: String,
    image: String,
-   note: String
+   note: String,
+   short: String
 });
 
 module.exports = mongoose.model("Blogpost", blogpostSchema);

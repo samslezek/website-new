@@ -8,6 +8,7 @@ var data = [
         image: "https://i.imgur.com/LGuA9AT.jpg",
         date: new Date("2019-03-15"),
         datestring: "February 18, 2019",
+        short:"snap-in-historical-context",
         note: ""
     },
     {
@@ -16,6 +17,7 @@ var data = [
         image: "https://i.imgur.com/vWWM6VP.png",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"jan-28-quick-hits",
         note: ""
     },
     {
@@ -24,6 +26,7 @@ var data = [
         image: "https://i.imgur.com/mT71Jxr.png",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"next-episode",
         note: ""
     },
     {
@@ -32,6 +35,7 @@ var data = [
         image: "https://i.imgur.com/6hBOxL7.png",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"on-growth-at-all-costs",
         note: ""    
     },
     {
@@ -40,6 +44,7 @@ var data = [
         image: "https://i.imgur.com/AkRBJcK.jpg",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"ny-tech-ekko",
         note: ""    
     },
     {
@@ -48,6 +53,7 @@ var data = [
         image: "https://i.imgur.com/aeeNU97.jpg",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"ny-tech-dog-parker",
         note: ""    
     },
     {
@@ -56,6 +62,7 @@ var data = [
         image: "https://i.imgur.com/GPoggj4.png",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"ny-tech-pundit",
         note: ""       
     },
     {
@@ -64,6 +71,7 @@ var data = [
         image: "https://i.imgur.com/wsmOKcB.png",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"jan-ny-tech",
         note: ""    
     },
     {
@@ -72,6 +80,7 @@ var data = [
         image: "https://i.imgur.com/R3I81cs.png",        
         date: new Date("2019-05-15"),
         datestring: "February 18, 2019",
+        short:"feb-ny-tech",
         note: ""
     },
     {
@@ -80,6 +89,7 @@ var data = [
         image: "https://i.imgur.com/wPUppZv.png",        
         date: new Date("2019-02-15"),
         datestring: "February 18, 2019",
+        short:"ny-tech-workbench",
         note: ""
     }
 ]
@@ -96,7 +106,7 @@ function seedDB(){
                 if(err){
                     console.log(err)
                 } else {
-                    console.log("added a blogpost");
+                    console.log("Adding blog post to database");
                 }
             });
         });

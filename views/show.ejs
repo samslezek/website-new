@@ -25,21 +25,19 @@
 		        <div class="col-md-12">
 		            <p class="lead">Blog Posts</p>
 		        </div>
-		       	<% blogposts.forEach(function(blogpost){ %>
-			        <div class="col-md-9">
-			            <div class="thumbnail">
-			                <img class="img-responsive" src="<%= blogpost.image %>">
-			                <div class="caption-full">
-			                    <h6 class="pull-right"><%= blogpost.datestring %></h6>
-			                    <h4><a href="/posts/<%= blogpost._id %>"><%=blogpost.title%></a></h4>
-			                    <p><%- blogpost.body %></p>
-			                    <p>
-			                        <em><%= blogpost.note %></em>
-			                    </p>
-			                </div>
-			            </div>
-			        </div>
-			    <% }); %>
+		        <div class="col-md-9">
+		            <div class="thumbnail">
+		                <img class="img-responsive" src="<%= blogpost.image %>">
+		                <div class="caption-full">
+		                    <h6 class="pull-right"><%= blogpost.datestring %></h6>
+		                    <h4><a href="/posts/<%= blogpost._id %>"><%=blogpost.title%></a></h4>
+		                    <p><%- blogpost.body %></p>
+		                    <p>
+		                        <em><%= blogpost.note %></em>
+		                    </p>
+		                </div>
+		            </div>
+		        </div>
 		    </div>
 		</div>
 

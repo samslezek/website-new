@@ -15,4 +15,17 @@ router.get("/", function(req, res){
     });
 });
 
+router.get("/posts/:id", function(req, res){
+    //find the campground with provided ID
+    Blogpost.findById(req.params.id, function(err, foundBlogpost){
+        if(err){
+            console.log(err);
+        } else {
+            console.log("I found a blog post.")
+            // render show template with that campground
+            res.render('show', {blogpost: foundBlogpost});
+        }
+    });
+});
+
 module.exports = router;
