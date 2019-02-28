@@ -7,7 +7,9 @@ var blogpostSchema = new mongoose.Schema({
    datestring: String,
    image: String,
    note: String,
-   short: String
+   short: String,
+   summary: String,
+   top: Boolean
 });
 
 module.exports = mongoose.model("Blogpost", blogpostSchema);
