@@ -48,32 +48,8 @@
 	    </nav>
 
 	    <div class="announcement">
-  			<h2 style="padding-bottom: 10px">Welcome to my Blog</h2>
-  			<p>Welcome to my blog, which I've created from scratch using full-stack JavaScript. A huge thanks to Colt Steele, whose <a href="https://www.udemy.com/the-web-developer-bootcamp/">online bootcamp</a> helped me refresh my web development skills and learn full-stack JavaScript, and to the incredibly helpful TAs and community who helped guide me through every issue along the learning path. I've highlighted a few of my most thoughtful blog posts on the front page here; also contained in the site is an "About Me" page and a "Blog Posts" page, which contains a more complete history of my posts.<br><br>If you want to chat, feel free to email me at <a href="mailto:sdotslezek@gmail.com">sdotslezek@gmail.com</a>.</p>
+  			<h2 style="padding-bottom: 10px">Welcome to my Site</h2>
+  			<p>Welcome to my site. Something new is coming soon.</a>.</p>
 		</div>
-		
-		<div class="container" style="padding-top:20px">
-		    <div class="row">
-		        <div class="col-md-12">
-		            <h1 style='text-align: center'>Top Blog Posts</p>
-		        </div>
-		    </div>
-		    <div class="row">
-		       	<% blogposts.forEach(function(blogpost){ %>
-		       		<% if (blogpost.top){ %>
-			        <div class="col-md-6">
-			            <div class="card" style="border:2px solid #777; margin-bottom:10px; padding: 40px">
-			                <div class="caption-full">
-			                    <h4 style="text-align:center; font-size: 30px"><a style="color:#777" href="/posts/<%= blogpost._id %>"><%=blogpost.title%></a></h4>
-			                    <p style="margin-top: 20px; text-align:center"><%- blogpost.summary %></p>
-			                </div>
-			            </div>
-			        </div>
-			        <% }; %>    
-			    <% }); %>
-			<div class="row">
-		</div>
-
-
 	</body>
 </html>
