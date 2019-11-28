@@ -14,6 +14,11 @@ piano.addEventListener("mousedown", e => {
   synth.triggerAttack(e.target.dataset.note);
 });
 
+piano.addEventListener("touchstart", e => {
+  // try to get this to work on mobile
+  synth.triggerAttack(e.target.dataset.note);
+});
+
 piano.addEventListener("mouseup", e => {
   // stops the trigger
   synth.triggerRelease();
@@ -54,6 +59,24 @@ document.addEventListener("keydown", e => {
 });
 // when the key is released, audio is released as well
 document.addEventListener("keyup", e => {
+  switch (e.key) {
+    case "d":
+    case "r":
+    case "f":
+    case "t":
+    case "g":
+    case "h":
+    case "u":
+    case "j":
+    case "i":
+    case "k":
+    case "o":
+    case "l":
+       synth.triggerRelease(); 
+  }
+
+  // try to get this to work on mobile
+document.addEventListener("touchend", e => {
   switch (e.key) {
     case "d":
     case "r":
