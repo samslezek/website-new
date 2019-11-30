@@ -8,6 +8,9 @@ synth.toMaster();
 const piano = document.getElementById("piano");
 
 document.querySelector('.btn').addEventListener('click', () => Tone.context.resume())
+document.querySelector('.btn').addEventListener('click', () => alert('you clicked the button'))
+document.querySelector('.btn').addEventListener('touchstart', () => Tone.context.resume())
+document.querySelector('.btn').addEventListener('touchstart', () => alert('you clicked the button'))
 
 piano.addEventListener("mousedown", e => {
   // fires off a note continously until trigger is released
