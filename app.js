@@ -16,5 +16,5 @@ var port = process.env.PORT || 3000;
 app.use("/", indexRoutes);
 
 app.listen(port, process.env.IP, function(){
-   console.log("Hello world");
+   // console.log("Hello world");
 });

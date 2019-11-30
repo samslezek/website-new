@@ -1,0 +1,27 @@
+nav.navbar {
+  background: black;
+  opacity:0.6;
+  border: 0;
+}
+header.a {
+  color:white;
+}
+@media (max-width: 767px) {
+  nav.navbar .navbar-collapse {
+    border: 0;
+    box-shadow: none;
+  }
+}
+header {
+  background-image: url('https://i.imgur.com/f4WymdE.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+header.jumbotron h1 {
+  padding-top: 100px;
+}
+header.jumbotron h1,
+header.jumbotron p {
+  color: darkblue;
+}
