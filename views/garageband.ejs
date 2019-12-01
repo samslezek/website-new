@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/garageband.css">
+  <style>
+    .selected {font-weight: bold}
+  </style>
+<% include ./partials/header %> 
+<head>
+  <title>Simple GarageBand</title>
+</head>
+<body>
+<div class='col-md-12'>
+<p>I built the below super simple GarageBand-type app in a previous exploration of online music libraries. It's built using Howler.js, with sounds downloaded from Splice. Two of the melodies are the same - oops. I don't expect Howler to be useful for the type of future apps I expect to build (it's simple but lacks some of the functionality I'll want), so there's a good chance I re-build this app with a different library in the near future.</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="display-4 text-center mb-3">Create Your Music</h1>
+
+      <form>
+
+      	<h4 style="padding-bottom:5px; padding-top:8px">Tempo</h4>
+        <div class="row">
+        	<div class="col-md-4" style="padding:3px; text-align: center">
+        		<div class="selected tempo-select" style="border:2px solid #666;padding-top:5px;padding-bottom: 5px;" id="tempo1">Slow <br>&#x1f422;</div>
+        	</div>
+        	<div class="col-md-4" style="padding:3px; text-align: center">
+        		<div class="tempo-select" style="border:2px solid #666; padding-top: 5px; padding-bottom: 5px;" id="tempo2">Medium <br> 	&#x1F415;</div>
+        	</div>
+        	<div class="col-md-4" style="padding:3px; text-align: center">
+        		<div class="tempo-select" style="border:2px solid #666; padding-top: 5px; padding-bottom: 5px;" id="tempo3">Fast <br>&#x1f407; </div>
+        	</div>
+        </div>
+
+        <h4 style="padding-bottom:5px; padding-top:8px">Melody</h4>
+        <div class="row">
+        	<div class="col-md-4" style="padding:3px; text-align: center">
+        		<div class="selected melody-select" style="border:2px solid blue;padding-top:5px;padding-bottom: 5px;  background: lightblue" id="melody1">Melody 1 <br>&#x1F3B6;</div>
+        	</div>
+        	<div class="col-md-4" style="padding:3px; text-align: center">
+        		<div class="melody-select" style="border:2px solid green; padding-top: 5px; padding-bottom: 5px;  background: lightgreen" id="melody2">Melody 2 <br>&#x1F3B5;</div>
+        	</div>
+        	<div class="col-md-4" style="padding:3px; text-align: center">
+        		<div class="melody-select" style="border:2px solid yellow; padding-top: 5px; padding-bottom: 5px;  background: lightyellow" id="melody3">Melody 3 <br>&#x1F3BC; </div>
+        	</div>
+        </div>
+
+        <h4 style="padding-bottom:5px; padding-top:8px">Rhythm</h4>
+        <div class="row">
+        	<div class="col-md-6" style="padding:3px; text-align: center">
+        		<div class="selected rhythm-select" style="border:2px solid #666;padding-top:5px;padding-bottom: 5px" id="rhythm1">Rhythm 1 <br>&#x1F39B;</div>
+        	</div>
+        	<div class="col-md-6" style="padding:3px; text-align: center">
+        		<div class="rhythm-select" style="border:2px solid #666; padding-top: 5px; padding-bottom: 5px" id="rhythm2">Rhythm 2 <br>&#x1F941;</div>
+        	</div>
+        </div>
+      </form>
+
+      <div class="container text-center" style="padding-top:30px">
+        <button class="btn btn-primary btn-round fa" id="playStopButton">
+          &#xf04b;
+        </button>
+      </div>
+  </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+  <script src="/scripts/garageband.js"></script>
+</html>
