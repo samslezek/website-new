@@ -22,4 +22,12 @@ router.get("/garageband", function(req, res){
     res.render('garageband')
 });
 
+router.get("/uber", function(req, res){
+    res.render('uber')
+});
+
+router.get("/snap", function(req, res){
+    res.render('snap')
+});
+
 module.exports = router;
