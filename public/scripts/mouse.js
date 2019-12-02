@@ -20,7 +20,7 @@ mouse=new Mouse();
             doc = eventDoc.documentElement;
             body = eventDoc.body;
 
-            event.pageX = event.clientX +
+            event.pageX = event.clientX +8
               (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
               (doc && doc.clientLeft || body && body.clientLeft || 0);
             event.pageY = event.clientY +
